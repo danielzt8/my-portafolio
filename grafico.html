@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-creative {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-50 text-zinc-900">
+
+    <nav
+        class="p-6 flex justify-between items-center border-b border-zinc-200 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <a href="index.html"
+            class="text-rose-600 font-bold text-sm tracking-tighter hover:text-zinc-900 transition-colors uppercase">←
+            Volver</a>
+        <div class="flex gap-4">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Affinity Suite Expert</span>
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-20">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-8xl font-bold font-creative leading-none mb-8">Diseño <span
+                    class="text-rose-600">Visual.</span></h1>
+            <p class="text-xl text-zinc-500 font-light leading-relaxed">
+                Especializado en **diseño editorial**, gestión de **redes sociales** y edición fotográfica avanzada con
+                herramientas de la suite Affinity.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <div class="group cursor-pointer">
+                <div class="relative aspect-[3/4] overflow-hidden bg-zinc-200 rounded-lg mb-4">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-zinc-400 font-creative text-lg opacity-50 group-hover:scale-110 transition-transform duration-500 italic">
+                        Editorial Project</div>
+                    <div class="absolute inset-0 bg-rose-600/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <h3 class="text-xs font-bold uppercase tracking-widest text-rose-600 mb-1">Diseño Editorial</h3>
+                <h2 class="text-2xl font-bold font-creative group-hover:underline">Revista Mensual Art & Style</h2>
+                <p class="text-sm text-zinc-500 mt-2 italic text-pretty">Maquetación completa y jerarquía tipográfica
+                    realizada en Affinity Publisher.</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative aspect-square overflow-hidden bg-zinc-200 rounded-lg mb-4">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-zinc-400 font-creative text-lg opacity-50 group-hover:scale-110 transition-transform duration-500 italic">
+                        Social Media Pack</div>
+                    <div class="absolute inset-0 bg-zinc-900/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <h3 class="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-1">Social Media</h3>
+                <h2 class="text-2xl font-bold font-creative group-hover:underline">Campaña Verano 2026</h2>
+                <p class="text-sm text-zinc-500 mt-2">Creación de contenido visual para Instagram y Facebook enfocados
+                    en engagement.</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative aspect-[4/5] overflow-hidden bg-zinc-200 rounded-lg mb-4">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-zinc-400 font-creative text-lg opacity-50 group-hover:scale-110 transition-transform duration-500 italic">
+                        Photo Retouching</div>
+                    <div class="absolute inset-0 bg-rose-600/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <h3 class="text-xs font-bold uppercase tracking-widest text-rose-600 mb-1">Fotografía</h3>
+                <h2 class="text-2xl font-bold font-creative group-hover:underline">Retoque Comercial Pro</h2>
+                <p class="text-sm text-zinc-500 mt-2 italic">Edición de color y manipulación digital avanzada con
+                    Affinity Photo.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-20 px-6 border-t border-gray-200 bg-white text-zinc-900">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+
+            <div class="max-w-sm">
+                <h4 class="font-bold uppercase tracking-tighter text-2xl mb-4">Sobre mi perfil</h4>
+                <p class="text-zinc-500 text-sm leading-relaxed">
+                    Creativo multidisciplinar. Combino la precisión del código con la estética del diseño editorial.
+                    Experto en la **Suite Affinity** y desarrollo frontend con **Tailwind CSS**.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <h5 class="text-xs font-bold uppercase text-blue-600 mb-3">Tech Stack</h5>
+                    <ul class="text-sm space-y-1 text-zinc-600">
+                        <li>HTML5 / CSS3</li>
+                        <li>Tailwind CSS</li>
+                        <li>JavaScript (Basic)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xs font-bold uppercase text-rose-600 mb-3">Design Tools</h5>
+                    <ul class="text-sm space-y-1 text-zinc-600">
+                        <li>Affinity Photo</li>
+                        <li>Affinity Publisher</li>
+                        <li>Social Media Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-end">
+                <span class="text-xs font-bold text-zinc-400 uppercase mb-2">¿Tienes un proyecto?</span>
+                <a href="mailto:tuemail@dominio.com"
+                    class="text-xl font-bold hover:line-through transition-all">TRABAJEMOS JUNTOS →</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

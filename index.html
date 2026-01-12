@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Web & Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-creative {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white overflow-hidden">
+
+    <main class="relative h-screen w-full flex flex-col lg:flex-row">
+
+        <a href="web.html"
+            class="group relative w-full lg:w-1/2 h-1/2 lg:h-full flex items-center justify-center bg-slate-950 transition-all duration-500 hover:w-[60%] border-b lg:border-b-0 lg:border-r border-gray-800 overflow-hidden">
+            <div
+                class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
+            </div>
+            <div class="z-10 text-center">
+                <span class="text-blue-400 font-mono text-sm mb-2 block tracking-widest">&lt;DEVELOPER /&gt;</span>
+                <h2 class="text-5xl lg:text-7xl font-bold font-creative uppercase">Web<br>Design</h2>
+                <p class="mt-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500">HTML •
+                    Tailwind CSS • JavaScript</p>
+            </div>
+        </a>
+
+        <a href="grafico.html"
+            class="group relative w-full lg:w-1/2 h-1/2 lg:h-full flex items-center justify-center bg-zinc-100 text-zinc-900 transition-all duration-500 hover:w-[60%] overflow-hidden">
+            <div
+                class="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+            </div>
+            <div class="z-10 text-center">
+                <span class="text-rose-600 font-bold text-sm mb-2 block tracking-widest uppercase">Visual Artist</span>
+                <h2 class="text-5xl lg:text-7xl font-bold font-creative uppercase">Graphic<br>Design</h2>
+                <p class="mt-4 text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Affinity
+                    Suite • Editorial • Social Media</p>
+            </div>
+        </a>
+
+        <div
+            class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 bg-black/80 backdrop-blur-md px-6 py-3 rounded-full border border-gray-700 hidden md:block">
+            <div class="flex gap-6 text-xs font-bold tracking-tighter uppercase">
+                <span class="text-blue-400">Web Dev</span>
+                <span class="text-gray-500">|</span>
+                <span class="text-rose-500">Affinity Expert</span>
+                <span class="text-gray-500">|</span>
+                <span class="text-white">Editorial</span>
+            </div>
+        </div>
+    </main>
+
+
+
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+        <button onclick="document.getElementById('contact-modal').showModal()"
+            class="bg-white text-black px-8 py-3 rounded-full font-bold uppercase tracking-widest hover:scale-110 transition-transform shadow-2xl border-4 border-double border-gray-400">
+            Contacto
+        </button>
+    </div>
+
+    <dialog id="contact-modal" class="backdrop:backdrop-blur-md bg-transparent p-0">
+        <div class="bg-zinc-900 text-white p-10 rounded-2xl border border-gray-700 max-w-md">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-2xl font-bold font-creative uppercase">Hablemos</h3>
+                <form method="dialog"><button class="text-gray-500 hover:text-white text-2xl">&times;</button></form>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <p class="text-xs text-rose-500 font-bold uppercase mb-1">Email</p>
+                    <a href="mailto:tu-correo@ejemplo.com"
+                        class="text-lg hover:text-blue-400 transition-colors">hola@tuportafolio.com</a>
+                </div>
+                <div>
+                    <p class="text-xs text-blue-500 font-bold uppercase mb-1">Redes & Social</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-rose-500 transition-colors italic">Instagram</a>
+                        <a href="#" class="hover:text-blue-400 transition-colors italic">LinkedIn</a>
+                        <a href="#" class="hover:text-gray-400 transition-colors italic">Behance</a>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-gray-800">
+                    <p class="text-xs text-gray-500">
+                        Basado en RD 🇩🇴 | Disponible para proyectos de Diseño Web y Editorial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </dialog>
+</body>
+
+</html>
